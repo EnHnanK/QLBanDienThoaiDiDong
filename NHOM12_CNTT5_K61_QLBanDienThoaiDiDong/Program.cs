@@ -16,7 +16,8 @@ namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new App());
+           // Application.Run(new Login());
         }
     }
 }

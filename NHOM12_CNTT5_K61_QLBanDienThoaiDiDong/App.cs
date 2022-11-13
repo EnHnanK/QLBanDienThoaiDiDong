@@ -1,9 +1,12 @@
-﻿using System;
+﻿using NHOM12_CNTT5_K61_QLBanDienThoaiDiDong.NewFolder1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,20 +15,20 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
 {
-    public partial class Form1 : Form
+    public partial class App : Form
     {
         ProcessDatabase dtBase = new ProcessDatabase();
         private DataTable dtBanhang;
-        public Form1()
+        public App()
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void App_Load(object sender, EventArgs e)
         {
+           
             tcTable.Appearance = TabAppearance.FlatButtons;
             tcTable.ItemSize = new Size(0, 1);
             tcTable.SizeMode = TabSizeMode.Fixed;
-
         }
 
         private bool isCheck()
@@ -48,10 +51,6 @@ namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
         {
             dtBanhang = dtBase.DocBang(i);
             dgvData.DataSource = dtBanhang;
-
-        }
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -99,6 +98,26 @@ namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            int i = cbbChonbang.SelectedIndex + 1;
+            switch (i)
+            {
+                case 1:
+                    tStaff ts = new tStaff();
+                    string sql = ts.addData(txtIDStaffxtStaff.Text.Trim(), txtNameStaff.Text.Trim(), Convert.ToInt32(txtGenderStaff.Text), dtpBirthDay.Value.ToString("yyyy-MM-dd"), txtAddressStaff.Text.Trim(), txtPhoneNumberStaff.Text.Trim(), txtIDPoisitionxtStaff.Text.Trim());
+                    dtBase.CapNhatDuLieu(sql);
+                    App_Load(sender, e);
+                    return;
+                case 2:
+                    MessageBox.Show("Case2", "Thông Báo", MessageBoxButtons.OK);
+                    return;
+                case 3:
+                    MessageBox.Show("Case3", "Thông Báo", MessageBoxButtons.OK);
+                    return;
+            }
+
+        }
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -142,6 +161,13 @@ namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
                 cbbChoncot.DisplayMember = "COLUMN_NAME";
 
             }
+
+        }
+
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //string i = dgvData.CurrentRow.Cells[0].Value.ToString();
+             //MessageBox.Show(i, "Thông Báo", MessageBoxButtons.OK);
 
         }
     }

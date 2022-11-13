@@ -15,7 +15,7 @@ namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
 
         public ProcessDatabase()
         {
-            strConnect = @"Data Source=ADMIN;Initial Catalog=QLBanDienThoaiDiDong;Integrated Security=True";
+            strConnect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""F:\Hoc Tap\C#\NHOM12_CNTT5_K61_QLBanDienThoaiDiDong\NHOM12_CNTT5_K61_QLBanDienThoaiDiDong\Data.mdf"";Integrated Security=True";
         }
         private void KetNoiCSDL()
         {

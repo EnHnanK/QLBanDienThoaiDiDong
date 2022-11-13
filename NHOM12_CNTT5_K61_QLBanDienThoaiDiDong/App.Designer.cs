@@ -1,6 +1,6 @@
 ﻿namespace NHOM12_CNTT5_K61_QLBanDienThoaiDiDong
 {
-    partial class Form1
+    partial class App
     {
         /// <summary>
         /// Required designer variable.
@@ -37,13 +37,13 @@
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.tcTable = new System.Windows.Forms.TabControl();
             this.tNhanVien = new System.Windows.Forms.TabPage();
-            this.dtpNgaysinhnv = new System.Windows.Forms.DateTimePicker();
-            this.txtMacv = new System.Windows.Forms.TextBox();
-            this.txtSdt = new System.Windows.Forms.TextBox();
-            this.txtDiachi = new System.Windows.Forms.TextBox();
-            this.txtGioitinh = new System.Windows.Forms.TextBox();
-            this.txtTennv = new System.Windows.Forms.TextBox();
-            this.txtMaNVtNV = new System.Windows.Forms.TextBox();
+            this.dtpBirthDay = new System.Windows.Forms.DateTimePicker();
+            this.txtIDPoisitionxtStaff = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumberStaff = new System.Windows.Forms.TextBox();
+            this.txtAddressStaff = new System.Windows.Forms.TextBox();
+            this.txtGenderStaff = new System.Windows.Forms.TextBox();
+            this.txtNameStaff = new System.Windows.Forms.TextBox();
+            this.txtIDStaffxtStaff = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -182,6 +182,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.tcTable.SuspendLayout();
@@ -199,6 +200,7 @@
             this.tHoaDonNhap.SuspendLayout();
             this.tChiTietHDN.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -272,6 +274,7 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.Size = new System.Drawing.Size(754, 202);
             this.dgvData.TabIndex = 7;
+            this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
             // tcTable
             // 
@@ -288,22 +291,22 @@
             this.tcTable.Controls.Add(this.tNhaCungCap);
             this.tcTable.Controls.Add(this.tHoaDonNhap);
             this.tcTable.Controls.Add(this.tChiTietHDN);
-            this.tcTable.Location = new System.Drawing.Point(238, 12);
+            this.tcTable.Location = new System.Drawing.Point(15, 13);
             this.tcTable.Name = "tcTable";
             this.tcTable.SelectedIndex = 0;
-            this.tcTable.Size = new System.Drawing.Size(747, 188);
+            this.tcTable.Size = new System.Drawing.Size(703, 169);
             this.tcTable.TabIndex = 8;
             this.tcTable.TabStop = false;
             // 
             // tNhanVien
             // 
-            this.tNhanVien.Controls.Add(this.dtpNgaysinhnv);
-            this.tNhanVien.Controls.Add(this.txtMacv);
-            this.tNhanVien.Controls.Add(this.txtSdt);
-            this.tNhanVien.Controls.Add(this.txtDiachi);
-            this.tNhanVien.Controls.Add(this.txtGioitinh);
-            this.tNhanVien.Controls.Add(this.txtTennv);
-            this.tNhanVien.Controls.Add(this.txtMaNVtNV);
+            this.tNhanVien.Controls.Add(this.dtpBirthDay);
+            this.tNhanVien.Controls.Add(this.txtIDPoisitionxtStaff);
+            this.tNhanVien.Controls.Add(this.txtPhoneNumberStaff);
+            this.tNhanVien.Controls.Add(this.txtAddressStaff);
+            this.tNhanVien.Controls.Add(this.txtGenderStaff);
+            this.tNhanVien.Controls.Add(this.txtNameStaff);
+            this.tNhanVien.Controls.Add(this.txtIDStaffxtStaff);
             this.tNhanVien.Controls.Add(this.label9);
             this.tNhanVien.Controls.Add(this.label8);
             this.tNhanVien.Controls.Add(this.label7);
@@ -314,58 +317,58 @@
             this.tNhanVien.Location = new System.Drawing.Point(4, 24);
             this.tNhanVien.Name = "tNhanVien";
             this.tNhanVien.Padding = new System.Windows.Forms.Padding(3);
-            this.tNhanVien.Size = new System.Drawing.Size(739, 160);
+            this.tNhanVien.Size = new System.Drawing.Size(695, 141);
             this.tNhanVien.TabIndex = 0;
             this.tNhanVien.UseVisualStyleBackColor = true;
             // 
-            // dtpNgaysinhnv
+            // dtpBirthDay
             // 
-            this.dtpNgaysinhnv.Location = new System.Drawing.Point(119, 113);
-            this.dtpNgaysinhnv.Name = "dtpNgaysinhnv";
-            this.dtpNgaysinhnv.Size = new System.Drawing.Size(200, 21);
-            this.dtpNgaysinhnv.TabIndex = 14;
+            this.dtpBirthDay.Location = new System.Drawing.Point(119, 108);
+            this.dtpBirthDay.Name = "dtpBirthDay";
+            this.dtpBirthDay.Size = new System.Drawing.Size(200, 21);
+            this.dtpBirthDay.TabIndex = 14;
             // 
-            // txtMacv
+            // txtIDPoisitionxtStaff
             // 
-            this.txtMacv.Location = new System.Drawing.Point(505, 76);
-            this.txtMacv.Name = "txtMacv";
-            this.txtMacv.Size = new System.Drawing.Size(171, 21);
-            this.txtMacv.TabIndex = 13;
+            this.txtIDPoisitionxtStaff.Location = new System.Drawing.Point(505, 76);
+            this.txtIDPoisitionxtStaff.Name = "txtIDPoisitionxtStaff";
+            this.txtIDPoisitionxtStaff.Size = new System.Drawing.Size(171, 21);
+            this.txtIDPoisitionxtStaff.TabIndex = 13;
             // 
-            // txtSdt
+            // txtPhoneNumberStaff
             // 
-            this.txtSdt.Location = new System.Drawing.Point(505, 47);
-            this.txtSdt.Name = "txtSdt";
-            this.txtSdt.Size = new System.Drawing.Size(171, 21);
-            this.txtSdt.TabIndex = 12;
+            this.txtPhoneNumberStaff.Location = new System.Drawing.Point(505, 47);
+            this.txtPhoneNumberStaff.Name = "txtPhoneNumberStaff";
+            this.txtPhoneNumberStaff.Size = new System.Drawing.Size(171, 21);
+            this.txtPhoneNumberStaff.TabIndex = 12;
             // 
-            // txtDiachi
+            // txtAddressStaff
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(505, 15);
-            this.txtDiachi.Name = "txtDiachi";
-            this.txtDiachi.Size = new System.Drawing.Size(171, 21);
-            this.txtDiachi.TabIndex = 11;
+            this.txtAddressStaff.Location = new System.Drawing.Point(505, 15);
+            this.txtAddressStaff.Name = "txtAddressStaff";
+            this.txtAddressStaff.Size = new System.Drawing.Size(171, 21);
+            this.txtAddressStaff.TabIndex = 11;
             // 
-            // txtGioitinh
+            // txtGenderStaff
             // 
-            this.txtGioitinh.Location = new System.Drawing.Point(119, 76);
-            this.txtGioitinh.Name = "txtGioitinh";
-            this.txtGioitinh.Size = new System.Drawing.Size(200, 21);
-            this.txtGioitinh.TabIndex = 9;
+            this.txtGenderStaff.Location = new System.Drawing.Point(119, 76);
+            this.txtGenderStaff.Name = "txtGenderStaff";
+            this.txtGenderStaff.Size = new System.Drawing.Size(200, 21);
+            this.txtGenderStaff.TabIndex = 9;
             // 
-            // txtTennv
+            // txtNameStaff
             // 
-            this.txtTennv.Location = new System.Drawing.Point(119, 47);
-            this.txtTennv.Name = "txtTennv";
-            this.txtTennv.Size = new System.Drawing.Size(200, 21);
-            this.txtTennv.TabIndex = 8;
+            this.txtNameStaff.Location = new System.Drawing.Point(119, 47);
+            this.txtNameStaff.Name = "txtNameStaff";
+            this.txtNameStaff.Size = new System.Drawing.Size(200, 21);
+            this.txtNameStaff.TabIndex = 8;
             // 
-            // txtMaNVtNV
+            // txtIDStaffxtStaff
             // 
-            this.txtMaNVtNV.Location = new System.Drawing.Point(119, 12);
-            this.txtMaNVtNV.Name = "txtMaNVtNV";
-            this.txtMaNVtNV.Size = new System.Drawing.Size(200, 21);
-            this.txtMaNVtNV.TabIndex = 7;
+            this.txtIDStaffxtStaff.Location = new System.Drawing.Point(119, 12);
+            this.txtIDStaffxtStaff.Name = "txtIDStaffxtStaff";
+            this.txtIDStaffxtStaff.Size = new System.Drawing.Size(200, 21);
+            this.txtIDStaffxtStaff.TabIndex = 7;
             // 
             // label9
             // 
@@ -439,7 +442,7 @@
             this.tChucVu.Location = new System.Drawing.Point(4, 24);
             this.tChucVu.Name = "tChucVu";
             this.tChucVu.Padding = new System.Windows.Forms.Padding(3);
-            this.tChucVu.Size = new System.Drawing.Size(739, 160);
+            this.tChucVu.Size = new System.Drawing.Size(695, 141);
             this.tChucVu.TabIndex = 1;
             this.tChucVu.UseVisualStyleBackColor = true;
             // 
@@ -489,7 +492,7 @@
             this.tKhachHang.Controls.Add(this.label12);
             this.tKhachHang.Location = new System.Drawing.Point(4, 24);
             this.tKhachHang.Name = "tKhachHang";
-            this.tKhachHang.Size = new System.Drawing.Size(739, 160);
+            this.tKhachHang.Size = new System.Drawing.Size(695, 141);
             this.tKhachHang.TabIndex = 2;
             this.tKhachHang.UseVisualStyleBackColor = true;
             // 
@@ -582,7 +585,7 @@
             this.tHangSX.Controls.Add(this.label17);
             this.tHangSX.Location = new System.Drawing.Point(4, 24);
             this.tHangSX.Name = "tHangSX";
-            this.tHangSX.Size = new System.Drawing.Size(739, 160);
+            this.tHangSX.Size = new System.Drawing.Size(695, 141);
             this.tHangSX.TabIndex = 3;
             this.tHangSX.UseVisualStyleBackColor = true;
             // 
@@ -634,7 +637,7 @@
             this.tSanPham.Controls.Add(this.label19);
             this.tSanPham.Location = new System.Drawing.Point(4, 24);
             this.tSanPham.Name = "tSanPham";
-            this.tSanPham.Size = new System.Drawing.Size(739, 160);
+            this.tSanPham.Size = new System.Drawing.Size(695, 141);
             this.tSanPham.TabIndex = 4;
             this.tSanPham.UseVisualStyleBackColor = true;
             // 
@@ -756,7 +759,7 @@
             this.tChiTietSP.Controls.Add(this.label25);
             this.tChiTietSP.Location = new System.Drawing.Point(4, 24);
             this.tChiTietSP.Name = "tChiTietSP";
-            this.tChiTietSP.Size = new System.Drawing.Size(739, 160);
+            this.tChiTietSP.Size = new System.Drawing.Size(695, 141);
             this.tChiTietSP.TabIndex = 5;
             this.tChiTietSP.UseVisualStyleBackColor = true;
             // 
@@ -920,7 +923,7 @@
             this.tHoaDonBan.Controls.Add(this.label34);
             this.tHoaDonBan.Location = new System.Drawing.Point(4, 24);
             this.tHoaDonBan.Name = "tHoaDonBan";
-            this.tHoaDonBan.Size = new System.Drawing.Size(739, 160);
+            this.tHoaDonBan.Size = new System.Drawing.Size(695, 141);
             this.tHoaDonBan.TabIndex = 6;
             this.tHoaDonBan.UseVisualStyleBackColor = true;
             // 
@@ -1018,7 +1021,7 @@
             this.tChiTietHDB.Controls.Add(this.label35);
             this.tChiTietHDB.Location = new System.Drawing.Point(4, 24);
             this.tChiTietHDB.Name = "tChiTietHDB";
-            this.tChiTietHDB.Size = new System.Drawing.Size(739, 160);
+            this.tChiTietHDB.Size = new System.Drawing.Size(695, 141);
             this.tChiTietHDB.TabIndex = 7;
             this.tChiTietHDB.UseVisualStyleBackColor = true;
             // 
@@ -1114,7 +1117,7 @@
             this.tDonDatHang.Controls.Add(this.label44);
             this.tDonDatHang.Location = new System.Drawing.Point(4, 24);
             this.tDonDatHang.Name = "tDonDatHang";
-            this.tDonDatHang.Size = new System.Drawing.Size(739, 160);
+            this.tDonDatHang.Size = new System.Drawing.Size(695, 141);
             this.tDonDatHang.TabIndex = 8;
             this.tDonDatHang.UseVisualStyleBackColor = true;
             // 
@@ -1194,7 +1197,7 @@
             this.tChiTietDDH.Controls.Add(this.label48);
             this.tChiTietDDH.Location = new System.Drawing.Point(4, 24);
             this.tChiTietDDH.Name = "tChiTietDDH";
-            this.tChiTietDDH.Size = new System.Drawing.Size(739, 160);
+            this.tChiTietDDH.Size = new System.Drawing.Size(695, 141);
             this.tChiTietDDH.TabIndex = 9;
             this.tChiTietDDH.UseVisualStyleBackColor = true;
             // 
@@ -1274,7 +1277,7 @@
             this.tNhaCungCap.Controls.Add(this.label52);
             this.tNhaCungCap.Location = new System.Drawing.Point(4, 24);
             this.tNhaCungCap.Name = "tNhaCungCap";
-            this.tNhaCungCap.Size = new System.Drawing.Size(739, 160);
+            this.tNhaCungCap.Size = new System.Drawing.Size(695, 141);
             this.tNhaCungCap.TabIndex = 10;
             this.tNhaCungCap.UseVisualStyleBackColor = true;
             // 
@@ -1355,7 +1358,7 @@
             this.tHoaDonNhap.Controls.Add(this.label56);
             this.tHoaDonNhap.Location = new System.Drawing.Point(4, 24);
             this.tHoaDonNhap.Name = "tHoaDonNhap";
-            this.tHoaDonNhap.Size = new System.Drawing.Size(739, 160);
+            this.tHoaDonNhap.Size = new System.Drawing.Size(695, 141);
             this.tHoaDonNhap.TabIndex = 11;
             this.tHoaDonNhap.UseVisualStyleBackColor = true;
             // 
@@ -1437,7 +1440,7 @@
             this.tChiTietHDN.Controls.Add(this.label60);
             this.tChiTietHDN.Location = new System.Drawing.Point(4, 24);
             this.tChiTietHDN.Name = "tChiTietHDN";
-            this.tChiTietHDN.Size = new System.Drawing.Size(739, 160);
+            this.tChiTietHDN.Size = new System.Drawing.Size(695, 141);
             this.tChiTietHDN.TabIndex = 12;
             this.tChiTietHDN.UseVisualStyleBackColor = true;
             // 
@@ -1610,19 +1613,28 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // Form1
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tcTable);
+            this.groupBox3.Location = new System.Drawing.Point(231, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(754, 188);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            // 
+            // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 524);
-            this.Controls.Add(this.tcTable);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Name = "App";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.App_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.tcTable.ResumeLayout(false);
@@ -1654,6 +1666,7 @@
             this.tChiTietHDN.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1669,12 +1682,12 @@
         private System.Windows.Forms.TabControl tcTable;
         private System.Windows.Forms.TabPage tNhanVien;
         private System.Windows.Forms.TabPage tChucVu;
-        private System.Windows.Forms.TextBox txtMacv;
-        private System.Windows.Forms.TextBox txtSdt;
-        private System.Windows.Forms.TextBox txtDiachi;
-        private System.Windows.Forms.TextBox txtGioitinh;
-        private System.Windows.Forms.TextBox txtTennv;
-        private System.Windows.Forms.TextBox txtMaNVtNV;
+        private System.Windows.Forms.TextBox txtIDPoisitionxtStaff;
+        private System.Windows.Forms.TextBox txtPhoneNumberStaff;
+        private System.Windows.Forms.TextBox txtAddressStaff;
+        private System.Windows.Forms.TextBox txtGenderStaff;
+        private System.Windows.Forms.TextBox txtNameStaff;
+        private System.Windows.Forms.TextBox txtIDStaffxtStaff;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -1687,7 +1700,7 @@
         private System.Windows.Forms.TextBox txtTencv;
         private System.Windows.Forms.TextBox txtMaCVtCV;
         private System.Windows.Forms.TabPage tKhachHang;
-        private System.Windows.Forms.DateTimePicker dtpNgaysinhnv;
+        private System.Windows.Forms.DateTimePicker dtpBirthDay;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
@@ -1813,6 +1826,7 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
